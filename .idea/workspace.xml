@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b820cd36-b216-48e2-8448-5d59af6155c4" name="Changes" comment="Everything">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info3a_info_logiciel_editeur_texte.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/command/CommandCut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/command/CommandExit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/command/CommandHello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/command/CommandInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/command/IHM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/editor/Buffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/editor/BufferImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/editor/BufferTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/editor/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/editor/EngineImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/editor/EngineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/editor/Selection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/group1/wiseman/info3a/editor/SelectionImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2p14QVHG4qQxyOyevCdVNqTFMtA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BufferTest.executor": "Run",
+    "JUnit.EngineTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fr.group1.wiseman.info3a.editor" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="info3a_info_logiciel_editeur_texte" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="info3a_info_logiciel_editeur_texte" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.group1.wiseman.info3a.editor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.group1.wiseman.info3a.editor" />
+      <option name="MAIN_CLASS_NAME" value="fr.group1.wiseman.info3a.editor.EngineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.EngineTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b820cd36-b216-48e2-8448-5d59af6155c4" name="Changes" comment="" />
+      <created>1731920232292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731920232292</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything" />
+  </component>
+</project>
