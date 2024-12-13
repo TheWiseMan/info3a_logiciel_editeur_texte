@@ -1,8 +1,8 @@
-import fr.group1.wiseman.info3a.Editor;
+import fr.group1.wiseman.info3a.App;
 
 public class Main {
     public static void main(String[] args) {
-        Editor client = new Editor();
+        App client = new App();
         client.run();
     }
 }

@@ -1,17 +1,26 @@
 package fr.group1.wiseman.info3a.command;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import fr.group1.wiseman.info3a.editor.Engine;
+
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 
 public class IHM implements CommandInvoker {
     private final Map<String, Command> commands = new HashMap<>();
     private boolean stopLoop = false;
     private BufferedReader bufferedReader;
+    private final Engine engine;
+
+    public IHM(InputStream input, Engine engine) {
+        this.engine = engine;
+        if (input == null) {
+            throw new IllegalArgumentException("null inputStream");
+        }
+        this.bufferedReader = new BufferedReader(new InputStreamReader(input));
+    }
 
     @Override
     public void runInvokerLoop() {
@@ -20,7 +29,7 @@ public class IHM implements CommandInvoker {
             try {
                 userInput = this.readUserInput();
             } catch (IOException e) {
-                e.printStackTrace();
+                //e.printStackTrace();
             }
             if (userInput == null) {
                 stopLoop = true;
@@ -29,6 +38,8 @@ public class IHM implements CommandInvoker {
             Command cmdToExecute = commands.get(userInput);
             if (cmdToExecute != null) {
                 cmdToExecute.execute();
+                Logger.getGlobal().info("Buffer:" + this.engine.getBufferContents());
+                Logger.getGlobal().info("Clipboard:" + this.engine.getClipboardContents());
             }
         }
     }

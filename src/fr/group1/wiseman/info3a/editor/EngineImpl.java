@@ -34,7 +34,8 @@ public class EngineImpl implements Engine {
 
     @Override
     public void cutSelectedText() {
-
+        this.copySelectionText();
+        this.delete();
     }
 
     @Override
@@ -44,16 +45,24 @@ public class EngineImpl implements Engine {
 
     @Override
     public void pasteClipboard() {
-
+        this.insert(this.clipboard);
     }
 
     @Override
     public void insert(String s) {
-
+        Selection sel = this.getSelection();
+        int selStart = sel.getBeginIndex();
+        int selEnd = sel.getEndIndex();
+        this.buffer.setRange(selStart, selEnd, s);
+        sel.setEndIndex(selStart+s.length());
     }
 
     @Override
     public void delete() {
-
+        Selection sel = this.getSelection();
+        int selStart = sel.getBeginIndex();
+        int selEnd = sel.getEndIndex();
+        this.buffer.setRange(selStart, selEnd, "");
+        sel.setEndIndex(selStart);
     }
 }

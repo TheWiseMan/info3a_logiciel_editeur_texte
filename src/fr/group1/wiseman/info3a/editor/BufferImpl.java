@@ -13,18 +13,29 @@ public class BufferImpl implements Buffer {
 
     @Override
     public String getRange(int start, int end) {
+        start = Math.max(start, 0);
+        start = Math.min(start, this.buffer.length());
+        end = Math.max(end, 0);
+        end = Math.min(end, this.buffer.length());
         if (start > end) {
             start = start + end;
             end = start-end;
             start = start-end;
         }
-        start = Math.max(start, 0);
-        end = Math.min(end, this.buffer.length());
         return buffer.substring(start, end);
     }
 
     @Override
     public void setRange(int start, int end, String newContent) {
+        start = Math.max(start, 0);
+        start = Math.min(start, this.buffer.length());
+        end = Math.max(end, 0);
+        end = Math.min(end, this.buffer.length());
+        if (start > end) {
+            start = start + end;
+            end = start-end;
+            start = start-end;
+        }
         this.buffer = this.buffer.substring(0, start) + newContent + this.buffer.substring(end);
     }
 
