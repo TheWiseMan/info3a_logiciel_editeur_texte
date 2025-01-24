@@ -57,4 +57,7 @@ public interface Engine {
      * Remove the contents of the selection in the buffer
      */
     void delete();
+
+    void seeHistory();
+    void undo();
 }

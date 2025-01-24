@@ -4,10 +4,12 @@ public class EngineImpl implements Engine {
     private final Buffer buffer;
     private final Selection selection;
     private String clipboard;
+    private final VersionManager versionMgr;
     public EngineImpl(String content) {
-        buffer = new BufferImpl(content);
-        selection = new SelectionImpl();
-        clipboard = "";
+        this.buffer = new BufferImpl(content);
+        this.selection = new SelectionImpl();
+        this.versionMgr = new VersionManagerImpl();
+        this.clipboard = "";
     }
 
     @Override
@@ -53,16 +55,29 @@ public class EngineImpl implements Engine {
         Selection sel = this.getSelection();
         int selStart = sel.getBeginIndex();
         int selEnd = sel.getEndIndex();
+        this.versionMgr.addOperation(new AtomicOperationImpl(this.buffer, selStart, selEnd, s));
         this.buffer.setRange(selStart, selEnd, s);
         sel.setEndIndex(selStart+s.length());
     }
 
     @Override
     public void delete() {
-        Selection sel = this.getSelection();
+        /*Selection sel = this.getSelection();
         int selStart = sel.getBeginIndex();
         int selEnd = sel.getEndIndex();
+        this.versionMgr.addOperation(new AtomicOperationImpl(this.buffer, selStart, selEnd, ""));
         this.buffer.setRange(selStart, selEnd, "");
-        sel.setEndIndex(selStart);
+        sel.setEndIndex(selStart);*/
+        this.insert("");
+    }
+
+    @Override
+    public void seeHistory() {
+        this.versionMgr.debugHistory();
+    }
+
+    @Override
+    public void undo() {
+        this.versionMgr.undo(this.buffer);
     }
 }

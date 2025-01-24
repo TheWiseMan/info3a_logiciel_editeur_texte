@@ -28,5 +28,7 @@ public class App {
         this.invoker.addCommand("select", new CommandSelect(this.receiver));
         this.invoker.addCommand("cut", new CommandCut(this.receiver));
         this.invoker.addCommand("hello", new CommandHello(this.receiver));
+        this.invoker.addCommand("hist", new CommandViewHistory(this.receiver));
+        this.invoker.addCommand("undo", new CommandUndo(this.receiver));
     }
 }
